@@ -1,0 +1,339 @@
+body{
+	font-family: Helvetica,Arial;
+	color: #424144;
+	background-color: #F0FFF0;
+}
+header{
+	float: left;
+	background-color: #79BD9A;
+	width: 100%;
+}
+header p{
+	float: right;
+}
+a{
+	color:#FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover{
+	color:#000;
+	padding: 20px 5px;
+}
+#logo{
+	float: left;
+	width: 40%;
+	height: 70%;
+	display: block;
+}
+nav{
+	float: right;
+	padding: 20px;
+}
+#menu-icon{
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: #4C8FEC url(../img/menu.png) center;
+}
+ul{
+	list-style: none;
+}
+li{
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+footer{
+	background-color: #3B8686;
+	color: #FFF;
+	text-align: center;
+	padding: 5px;
+	clear: both;
+}
+footer a:hover{
+	
+	color: #000;
+}
+section h2 {
+	text-align: center;
+}
+
+/*media query*/
+@media only screen and (max-width:480px){
+	#menu-icon{
+		display:inline-block;
+	}
+
+	nav ul{
+		display: none;
+		position: absolute;
+		right: 20px;
+		top: 60px;
+		padding: 20px;
+		background: #FFF;
+		width: 20%;
+	}
+	nav li{
+		text-align: left;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+	nav:hover ul{
+		display: block;
+	}
+	nav li a{
+		color: #3B8686;
+	}
+	p{
+		text-align: left;
+	}
+	.depoimentos{
+		box-shadow: 10px 10px 5px #BBBBBB;
+		border-radius: 5px;
+		width: 95%;
+		padding-right: 10px;
+	}
+	nav #nav-footer{
+		display: none;
+	}
+	#copyright p{
+		text-align: center;
+
+	}
+	#slogan {
+		margin-right: 10px;
+		font-weight: bold;
+		letter-spacing: 4px;
+	}
+	input[type=text], textarea{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #CCC;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	.button{
+		width: 140px;
+		height: 50px;
+		cursor: pointer;
+		background-color: #79BD94;
+		color: #000;
+		border: none;
+		border-radius: 4px;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+	}
+	
+	
+}
+/* Ipad*/
+@media only screen and (min-width: 481px){
+	#menu-icon{
+		display: hidden;
+	}
+	body{
+		width: 100%;
+		margin: 0 auto;
+	}
+	header{
+		height: 200px;
+		width: 100%;
+
+	}
+	section{
+		height: 250px;
+		clear: both;
+	}
+	#prom1{
+		width: 48%;
+		float: left;
+		border: 1px solid #ccc;
+	}
+	#prom2{
+		width: 48%;
+		float: right;
+		border: 1px solid #ccc;
+	}
+	#gerais1, #gerais2, #gerais3{
+		float: left;
+		width: 32%;
+		border: 1px solid #ccc;
+		margin-left: 10px;
+	}
+	#gerais2 img{
+		margin-left: 23%;
+	}
+	.depoimentos{
+		box-shadow: 3px 3px 3px #888888;
+		border-radius: 5px;
+		width: 48%;
+		float: left;
+		margin: 0px 0px 15px 15px;
+	}
+	footer{
+		height: 200px;
+		clear: both;
+	}
+	#slogan {
+		margin-right: 10px;
+		font-weight: bold;
+		letter-spacing: 7px;
+	}
+	#img1{
+		margin-left: 320px;
+		float: left;
+		clear: both;
+
+	}
+	#img1 img{
+		width: 250px;
+		height: 160px;
+	}
+	.borda{
+		border: 1px solid #CCC;
+		text-align: justify;
+		padding: 5px;
+	}.sessao1{
+		padding: 5px;
+		text-align: justify;
+	}
+	.btcontratar{
+		width: 140px;
+		height: 50px;
+		cursor: pointer;
+		margin-left: 360px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		float: left;
+		clear: both;
+		background-color: #79BD94;
+		color: #000;
+		border: none;
+		border-radius: 4px;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+	}
+	.btcontratar:hover{
+		background-color: #696969;
+		color: #FFF;
+	}
+	#img3{
+		margin-left: 320px;
+		float: left;
+		clear: both;
+	}
+	#img3 img{
+		width: 250px;
+		height: 160px;
+	}
+	#contato {
+		width: 100%;
+		float: left;
+		clear: both;
+		height: auto;
+	}
+	#informacoes{
+		clear: both;
+		width: 100%;
+	}
+	input[type=text], textarea{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #CCC;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	.button{
+		width: 140px;
+		height: 50px;
+		cursor: pointer;
+		background-color: #79BD94;
+		color: #000;
+		border: none;
+		border-radius: 4px;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+	}
+
+	.detalhes, .map{
+	    width: 49.1%;
+	    float: left;
+	    border: 1px solid #ccc;
+	    margin-top: 10px;
+	    margin-bottom: 10px;	
+	}
+
+	.map{
+		margin-left: 10px;
+	}
+
+}
+/*pc*/
+@media only screen and (min-width: 960px){
+	body{
+		width: 960px;
+	}
+	#contato {
+		width: 100%;
+		float: left;
+		clear: both;
+		height: auto;
+	}
+	#informacoes{
+		clear: both;
+		width: 100%;
+	}
+	input[type=text], textarea{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #CCC;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	.button{
+		width: 140px;
+		height: 50px;
+		cursor: pointer;
+		background-color: #79BD94;
+		color: #000;
+		border: none;
+		border-radius: 4px;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+	}
+
+	.button:hover{
+		background-color: #696969;
+		color: #FFF;
+	}
+
+	.detalhes, .map{
+	    width: 49.1%;
+	    float: left;
+	    border: 1px solid #ccc;
+	    margin-top: 10px;
+	    margin-bottom: 10px;	
+	}
+
+	.map{
+		margin-left: 10px;
+	}
+
+
+}
